@@ -1,0 +1,18 @@
+[package]
+name = "island_survivor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[dependencies]
+bevy = { version = "0.9.1", features = ["dynamic"] }
+bevy-inspector-egui = "0.16.0-pre.2"
+bevy_mod_picking = "0.11.0"
+bevy_asset_loader = "0.14.1"
